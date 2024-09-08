@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gupter', serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(35, 35, 35);
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    border-radius: 10%;
+}
+
+li{
+    display: flex;
+    float: inline-start;
+}
+
+li a {
+    padding: 15px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color: coral;
+}
+
+.description{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 130px;
+    font-size: large;
+    color: white;
+}
+.desc{
+    padding: 25px 50px;
+}
+
+.desc_head1{
+    font-size: 30px;
+}
+.desc_head1 span{
+    color: coral;
+}
+
+
+.desc_head2{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.desc_head2 span{
+    color: coral;
+}
+.desc_head2 span:after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: -2;
+    height: 10%;
+    border-left: 3px solid coral;
+    background-color: rgb(35, 35, 35);
+    animation: text 5s infinite backwards steps(10);
+}
+@keyframes text{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 65%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.desc p{
+    margin-top: 15px;
+}
+.reseaux i {
+    margin: 8px;
+    border: 1px solid coral;
+    padding: 10px;
+    border-radius: 50px;
+    transition: .5s ease;
+}
+.reseaux i:hover{
+    background-color: coral ;
+    box-shadow: 0px 0px 20px coral;
+}
+.home_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+}
+.home_btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    color: white;
+}
+.about_desc{
+    margin-left: 50px;
+}
+.about_desc h1{
+    font-size: 40px;
+}
+.about_desc h2{
+    margin-top: 10px;
+}
+.about_desc span{
+    color: coral;
+}
+.about_desc p{
+    margin-top: 10px;
+}
+.about_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+}
+.about_btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.about_photo:hover{
+    box-shadow: 0px 0px 5px;
+    color: coral;
+}
+.service_head{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+   
+}
+.service_head span{
+    color: coral;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    margin: 70px;
+    color: white;
+}
+.card_layout{
+    background-color: rgb(60,60, 60);
+    padding: 30px;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+.card_layout i{
+    font-size: 40px;
+    color: coral;
+}
+.card_layout h2{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.card_layout p{
+    margin-top: 15px;
+}
+.service_btn{
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+}
+.service_btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.port_head{
+    font-size: 40px;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}
+.port_head span{
+    color: coral;
+}
+.projets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects_card{
+    margin: 25px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 15px black;
+    position: relative;
+}
+.projects_card p{
+    opacity: 0;
+    visibility: hidden;
+}
+.project_desc{
+    width: 400px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 5px;
+    color: white;
+    bottom: 0px;
+    text-align: center;
+    transition: .3s ease-out;
+}
+.projects_card:hover .project_desc{
+    border-image: fill 0 linear-gradient(#0001, coral);
+    height: 200px;
+    bottom: 0;
+    padding: 60px;
+}
+.contact_head{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.contact_head span{
+    color: coral;
+}
+#contact .form{
+    margin-top: 50px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+form input, textarea{
+    width: 400px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(59, 59, 59);
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+}
+form textarea {
+    margin-left: 235px;
+    width: 790px;
+}
+.form_btn{
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px coral;
+    transition: .3s ease;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 580px;
+}
+.form_btn:hover{
+    background: transparent;
+    border: 2px solid coral;
+    color: white;
+}
+.footer{
+    background-color: black;
+    color: rgb(211, 211, 211);
+    padding: 25px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
